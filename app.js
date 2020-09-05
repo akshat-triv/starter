@@ -22,5 +22,8 @@ app.use((req, res, next) => {
 });
 
 // 3) ROUTES
+app.get('/', (req, res, next) => {
+  res.send('Hello World');
+});
 
 module.exports = app;
